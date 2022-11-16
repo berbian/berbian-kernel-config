@@ -8,7 +8,7 @@
 ### Config branches creation:
 - main branch is a standard branch creation
 - configs branches are new orphan branches created locally and pushed as new branches to github. 
-  - # git switch --orphan specific-<device>
+  - git switch --orphan specific-<device>
 
 ### Kernel configuration files:
 - device_berbian_defconfig: Main defconfig.
@@ -19,8 +19,8 @@
 
 ### Create device specific mer fragment:
 - The generated file is not a valid .config file, but a reference to create it.
-   - # git clone https://github.com/mer-hybris/mer-kernel-check
-   - # mer_verify_kernel_config <device>-berbian_defconfig > <device>-berbian_defconfig_check_result
+   - git clone https://github.com/mer-hybris/mer-kernel-check
+   - mer_verify_kernel_config <device>-berbian_defconfig > <device>-berbian_defconfig_check_result
 
 ### Reomended merge order:
 - device_berbian_defconfig device_berbian_mer_fixes.config berbian_halium_waydroid.config berbian_extra.config
